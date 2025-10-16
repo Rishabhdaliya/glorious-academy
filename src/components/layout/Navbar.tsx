@@ -185,26 +185,28 @@ export default function Navbar() {
   };
 
   return (
-    <Disclosure as="nav" className="relative border-b border-gray-200 bg-white">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button */}
-            <DisclosureButton className="group hover:text-secondary-dark relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
-              <span className="absolute -inset-0.5" />
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
-              <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
-            </DisclosureButton>
-          </div>
+    <Disclosure
+      as="nav"
+      className="fixed top-4 left-1/2 z-50 flex w-full max-w-5xl -translate-x-1/2 transform items-center justify-center rounded-full bg-white px-6 py-3 shadow-sm md:py-1"
+    >
+      <div className="relative flex h-16 w-full items-center justify-center">
+        <div className="absolute inset-y-0 left-4 flex items-center sm:hidden">
+          {/* Mobile menu button */}
+          <DisclosureButton className="group hover:text-secondary-dark relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+            <span className="absolute -inset-0.5" />
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
+            <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
+          </DisclosureButton>
+        </div>
 
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex shrink-0 items-center">
-              <Link href="/">
-                <img alt={'Glorious Courses'} src={'/logo.jpg'} className="h-10 w-auto" />
-              </Link>
-            </div>
-            <div className="hidden sm:ml-6 sm:block">
+        <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-center">
+          <div className="flex shrink-0 items-center gap-6">
+            <Link href="/">
+              <img alt={'Glorious Courses'} src={'/logo.jpg'} className="h-10 w-auto" />
+            </Link>
+
+            <div className="hidden sm:block">
               <div className="flex space-x-4">
                 {navItems.map(item => renderNavItem(item, false))}
               </div>

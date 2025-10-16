@@ -19,7 +19,7 @@ function Footer() {
         <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-4">
           {/* Brand Section */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-white">Glorious</h3>
+            <h3 className="text-2xl font-bold text-white">Glorious academy</h3>
             <p className="text-sm leading-relaxed text-slate-400">
               Excellence in education. Preparing students for JEE, NEET, and board exams with proven
               methodologies and expert guidance.
@@ -128,10 +128,10 @@ function Footer() {
               <li className="flex gap-3">
                 <Mail size={18} className="mt-0.5 flex-shrink-0 text-blue-400" />
                 <a
-                  href="mailto:info@glorious.com"
+                  href="mailto:info@Glorious academy.com"
                   className="text-sm text-slate-400 transition-colors hover:text-blue-400"
                 >
-                  info@glorious.com
+                  info@Glorious academy.com
                 </a>
               </li>
               <li className="flex gap-3">
@@ -160,7 +160,7 @@ function Footer() {
 
         {/* Bottom Section */}
         <div className="flex flex-col items-center justify-between gap-4 text-sm text-slate-400 md:flex-row">
-          <p>&copy; 2025 Glorious. All rights reserved.</p>
+          <p>&copy; 2025 Glorious academy. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="transition-colors hover:text-blue-400">
               Privacy Policy
