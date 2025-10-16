@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
       <main className="mx-auto flex w-full max-w-7xl flex-grow flex-col items-center">
         <button
           type="button"
-          className="mt-16 mb-6 flex items-center space-x-2 rounded-full border border-indigo-600 px-4 py-1.5 pr-1.5 text-xs text-indigo-600 transition hover:bg-indigo-50"
+          className="text-primary mt-16 mb-6 flex items-center space-x-2 rounded-full border border-indigo-600 px-4 py-1.5 pr-1.5 text-xs transition hover:bg-indigo-50"
         >
           <span>Explore how we help grow brands.</span>
           <span className="flex size-6 items-center justify-center rounded-full bg-indigo-600 p-1">
@@ -38,31 +38,25 @@ const HeroSection: React.FC = () => {
         </button>
 
         <h1 className="max-w-2xl text-center text-3xl leading-tight font-bold text-gray-900 sm:text-4xl md:text-5xl">
-          Preferred choice of leaders in <span className="text-indigo-600">every industry</span>
+          Preferred choice of leaders in <span className="text-primary">every industry</span>
         </h1>
 
         <p className="mt-4 max-w-md text-center text-sm leading-relaxed text-gray-600 sm:text-base">
           Learn why professionals trust our solution to complete their customer journey.
         </p>
 
-        <button
-          type="button"
-          className="mt-8 flex items-center space-x-2 rounded-full bg-indigo-600 px-6 py-2.5 pr-2.5 text-sm font-medium text-white transition hover:bg-indigo-700"
-        >
-          <span>Read Success Stories</span>
+        <button className="from-secondary-light to-secondary-dark mt-8 flex items-center gap-2 rounded-full bg-gradient-to-r px-8 py-3 text-white transition hover:-translate-y-0.5">
+          <span>Read more</span>
           <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
+            width="13"
+            height="12"
+            viewBox="0 0 13 12"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M4.821 11.999h13.43m0 0-6.714-6.715m6.715 6.715-6.715 6.715"
-              stroke="#fff"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              d="M12.53 6.53a.75.75 0 0 0 0-1.06L7.757.697a.75.75 0 1 0-1.06 1.06L10.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06zM0 6v.75h12v-1.5H0z"
+              fill="#fff"
             />
           </svg>
         </button>
